@@ -50,8 +50,8 @@ function renderFootnotes(text) {
     html += '.</span>';
     html += '<span style="display: inline-block; vertical-align: top;">';
     html += md.renderInline(footNote.content.trim());
+    html += '<a style="margin-left: 0.58rem;" href="#fnref:' + footNote.index + '" rev="footnote"> ↩</a>';
     html += '</span>';
-    html += '<a href="#fnref:' + footNote.index + '" rev="footnote"> ↩</a>';
     html += '</li>';
   });
   // add footnotes at the end of the content
